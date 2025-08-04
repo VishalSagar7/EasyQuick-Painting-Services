@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/autoplay';
+
+.link-underline {
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.link-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 0%;
+    height: 2.5px;
+    border-radius: 20%;
+    background-color: #940039;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.link-underline:hover::after {
+    width: 100%;
+    border-radius: 20%;
+    left: 0;
+    right: auto;
+}
+
