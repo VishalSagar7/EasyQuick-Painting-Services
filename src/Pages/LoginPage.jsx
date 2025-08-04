@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import { LoginValidationSchema } from '../Validations/LoginPageValidation';
-import LoginFormBgImg from "../assets/LoginFormBgImg.png";
+import LoginFormBgImg from "../assets/LoginFormBgimg.png";
 import InputField from '../components/commonComponent/InputField';
 import inputFieldCss from '../components/utils/inputFieldCss';
 import { useNavigate } from 'react-router-dom';
