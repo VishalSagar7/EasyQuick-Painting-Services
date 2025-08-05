@@ -25,9 +25,9 @@ const Home = () => {
 
             <OurServices />
 
-            <WhyUs />
-            
             <Steps />
+
+            <WhyUs />
 
             <ContactUsForm />
 

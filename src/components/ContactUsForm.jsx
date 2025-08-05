@@ -20,8 +20,8 @@ const ContactUsForm = () => {
         validationSchema: ContactValidationSchema,
         onSubmit: (values, { resetForm }) => {
             emailjs.send(
-                'service_uyizmlb', // Replace with your EmailJS service ID
-                'template_fqsoz9a', // Replace with your EmailJS template ID
+                'service_uyizmlb', // service ID
+                'template_fqsoz9a', // EmailJS template ID
                 {
                     name: values.name,
                     phone: values.phone,

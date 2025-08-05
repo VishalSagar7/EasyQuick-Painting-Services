@@ -32,7 +32,7 @@ const stepsArray = [
 const Steps = () => {
     return (
         <div className='w-full pb-[80px] px-10'>
-            <h1 className='text-4xl text-center text-gray-800 font-bold font-mono capitalize'>Steps required in our company</h1>
+            <h1 className='text-4xl text-center text-gray-800 font-bold font-mono capitalize'>Steps we follow</h1>
 
             <div className='w-full border mt-[60px] flex items-center justify-center gap-2'>
 

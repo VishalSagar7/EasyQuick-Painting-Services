@@ -13,7 +13,6 @@ const SeconderyNavbar = () => {
                 <Link to={"/"}><a href="#" className="link-underline">Home</a></Link>
                 <Link to={"/aboutus"}><a href="#" className="link-underline">About us</a></Link>
                 <Link to={"/ourservices"}><a href="#" className="link-underline">Our services</a></Link>
-                <a href="#" className="link-underline">Testimonials</a>
                 <Link to={"/contactus"}><a href="#" className="link-underline">Contact us</a></Link>
                 <a href="#" className="link-underline">Faq</a>
             </div>
