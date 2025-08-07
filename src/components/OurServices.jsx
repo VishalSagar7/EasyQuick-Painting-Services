@@ -10,8 +10,8 @@ const OurServices = () => {
             //     backgroundSize : "cover"
             // }}
         >
-            <h1 className='text-4xl topic-head text-center text-gray-900 font-bold font-mono capitalize'>Services we provide</h1>
-            <div className='flex w-full flex-wrap p-12 justify-between gap-y-12'>
+            <h1 className='text-2xl md:text-4xl topic-head text-center text-gray-900 font-bold font-mono capitalize'>Services we provide</h1>
+            <div className='flex w-full flex-wrap p-6 md:p-12 justify-between gap-y-6 md:gap-y-12'>
                 {
                     servicesArray?.length > 0 && servicesArray?.map((service, index) =>
                         <ServiceCard key={index} service={service} />

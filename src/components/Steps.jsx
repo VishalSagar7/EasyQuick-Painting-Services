@@ -31,16 +31,16 @@ const stepsArray = [
 
 const Steps = () => {
     return (
-        <div className='w-full pb-[80px] px-10'>
+        <div className='w-full pb-[80px] md:px-10'>
             <h1 className='text-4xl text-center text-gray-800 font-bold font-mono capitalize'>Steps we follow</h1>
 
-            <div className='w-full border mt-[60px] flex items-center justify-center gap-2'>
+            <div className='w-full border mt-[60px] flex flex-wrap items-center justify-center gap-4 md:gap-2'>
 
                 {stepsArray.map((step, index) => (
                     <React.Fragment key={index}>
                         <OneStep step={step} />
                         {index !== stepsArray.length - 1 && (
-                            <MoveRight color='black' size={50}/>
+                            <MoveRight className='hidden md:block' color='black' size={50}/>
                         )}
                     </React.Fragment>
                 ))}

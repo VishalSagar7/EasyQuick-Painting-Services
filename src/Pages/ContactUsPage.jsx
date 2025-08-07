@@ -14,19 +14,19 @@ const ContactUsPage = () => {
 
             <SeconderyNavbar />
             <BackgroundBanner heading={"Get in Touch With Us"} imgAddress={ContactUsBanner } />
-            <div className=' py-8 px-[150px]'>
+            <div className=' py-8 px-[50px] md:px-[150px]'>
                 <p className='text-gray-700 text-md'>
                     We’re here to help you bring your vision to life! Whether you have a question, need a quote, or want to discuss your project, feel free to reach out. Fill out the form below and our team will get back to you as soon as possible.
                     Let’s start something great together!
                 </p>
             </div>
 
-            <div className='py-6'>
+            <div className=' py-3 md:py-6'>
                 <ContactUsForm />
             </div>
 
 
-            <div className=' px-[150px] mt-8 w-full space-y-2'>
+            <div className=' px-[50px] md:px-[150px] mt-8 w-full space-y-2'>
 
                 <div className='flex gap-4'>
                     <Phone color=' gray ' />

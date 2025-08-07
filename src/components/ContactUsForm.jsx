@@ -48,13 +48,13 @@ const ContactUsForm = () => {
             <h1 className='text-4xl topic-head text-center mb-8 text-gray-900 font-bold font-mono capitalize'>Contact Us</h1>
 
 
-            <div className='h-[500px] w-full px-[150px] rounded overflow-hidden'>
-                <div className='w-full h-full flex bg-white rounded shadow overflow-hidden'>
-                    <div className='h-full w-1/2  flex items-center justify-center'>
-                        <img src={ Logo } alt="" />
+            <div className='md:h-[500px] w-full md:px-[150px] rounded overflow-hidden'>
+                <div className='w-full h-full md:flex md:bg-white rounded shadow overflow-hidden'>
+                    <div className=' h-[40px] md:h-full md:w-1/2   flex items-center justify-center'>
+                        <img className='h-[50px] md:h-[120px]' src={ Logo } alt="" />
 
                     </div>
-                    <div className='h-full w-1/2 p-10 flex items-center justify-center'>
+                    <div className='h-full w-full md:w-1/2 p-10 flex items-center justify-center'>
                         <form
                             className="w-full space-y-4"
                             onSubmit={formik.handleSubmit}

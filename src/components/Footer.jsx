@@ -12,12 +12,12 @@ const Footer = () => {
             <div className='h-full  w-[30%]  '>
                 <h1 className='text-[1.5rem] font-semibold text-white'>Products</h1>
                 <ul className='py-2 space-y-2'>
-                    <li className=' cursor-pointer'>Interior Painting</li>
-                    <li className=' cursor-pointer'>Exterior Painting</li>
-                    <li className=' cursor-pointer'>Wall Textures & Designs</li>
-                    <li className=' cursor-pointer'>Luppam (putty work)</li>
-                    <li className=' cursor-pointer'>Waterproofing Solutions</li>
-                    <li className=' cursor-pointer'>Manpower Supply</li>
+                    <li className=' text-white cursor-pointer'>Interior Painting</li>
+                    <li className=' text-white cursor-pointer'>Exterior Painting</li>
+                    <li className=' text-white cursor-pointer'>Wall Textures & Designs</li>
+                    <li className=' text-white cursor-pointer'>Luppam (putty work)</li>
+                    <li className=' text-white cursor-pointer'>Waterproofing Solutions</li>
+                    <li className=' text-white cursor-pointer'>Manpower Supply</li>
                 </ul>
             </div>
 
@@ -25,8 +25,8 @@ const Footer = () => {
             <div className='h-full w-[30%]  '>
                 <h1 className='text-[1.5rem] font-semibold text-white'>Support</h1>
                 <ul className='py-2 space-y-2'>
-                    <li className=' cursor-pointer'>Customer Care</li>
-                    <li className=' cursor-pointer'>Sitemap</li>
+                    <li className=' text-white cursor-pointer'>Customer Care</li>
+                    <li className=' text-white cursor-pointer'>Sitemap</li>
                 </ul>
             </div>
 
@@ -34,9 +34,9 @@ const Footer = () => {
                 <h1 className='text-[1.5rem] font-semibold text-white'>Social Media</h1>
                 <ul className='py-2 space-y-2'>
                     <li className=' cursor-pointer'>Instagram</li>
-                    <li className=' cursor-pointer'>Facebook</li>
-                    <li className=' cursor-pointer'>Youtube</li>
-                    <li className=' cursor-pointer'>Linkedin</li>
+                    <li className=' text-white cursor-pointer'>Facebook</li>
+                    <li className=' text-white cursor-pointer'>Youtube</li>
+                    <li className=' text-white cursor-pointer'>Linkedin</li>
                 </ul>
             </div>
       

@@ -7,6 +7,7 @@ import HeroSection from '../components/HeroSection'
 import Footer from '../components/Footer'
 import ContactUsForm from '../components/ContactUsForm'
 import Steps from '../components/Steps'
+import ThreeSpecialities from '../components/ThreeSpecialities'
 
 
 
@@ -22,6 +23,8 @@ const Home = () => {
             <HeroSection />
 
             <OurSpecialitiesComponent />
+
+            <ThreeSpecialities/>
 
             <OurServices />
 
