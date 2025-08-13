@@ -5,11 +5,12 @@ import OurServicesBanner from "../assets/ourservicesbanner.jpg";
 import { servicesArray } from '../components/utils/inputFieldCss';
 import LongServiceCard from '../components/LongServiceCard';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const OurServicesPage = () => {
     return (
-        <div className='w-full bg-[#FAF6F0]'>
-
+        <div className='w-screen bg-[#FAF6F0]'>
+            <Navbar/>
             <SeconderyNavbar />
             <BackgroundBanner heading={"Explore Our Services"} imgAddress={OurServicesBanner} />
             <div className=' py-8 px-[50px] md:px-[150px]'>

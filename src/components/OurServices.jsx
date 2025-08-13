@@ -1,5 +1,6 @@
 import ServiceCard from './ServiceCard';
 import { servicesArray } from './utils/inputFieldCss';
+import Heading from './Heading';
 
 const OurServices = () => {
     return (
@@ -10,8 +11,9 @@ const OurServices = () => {
             //     backgroundSize : "cover"
             // }}
         >
-            <h1 className='text-2xl md:text-4xl topic-head text-center text-gray-900 font-bold font-mono capitalize'>Services we provide</h1>
-            <div className='flex w-full flex-wrap p-6 md:p-12 justify-between gap-y-6 md:gap-y-12'>
+           
+            <Heading text={"Services we provide"}/>
+            <div className='flex w-full flex-wrap p-6 md:px-12  md:pb-12 justify-between gap-y-6 md:gap-y-12'>
                 {
                     servicesArray?.length > 0 && servicesArray?.map((service, index) =>
                         <ServiceCard key={index} service={service} />

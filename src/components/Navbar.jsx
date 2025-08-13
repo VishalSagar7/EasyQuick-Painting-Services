@@ -1,20 +1,30 @@
 import React from 'react'
 import SeconderyNavbar from './SeconderyNavbar'
+import { Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { MapPinHouse } from 'lucide-react';
 
 const Navbar = () => {
     return (
-        <div className='w-full '>
-            <div className='w-full section flex h-8 md:h-10 bg-[#72002c] justify-between text-white text-xs px-2 md:text-sm md:px-12'>
+        <div className=''>
+            <div className=' section flex h-8  md:h-8 bg-[#72002c] justify-between text-white text-xs px-2 md:text-sm md:px-12'>
                 <div className='h-full w-[200px] flex items-center '>
-                    <p>+91 9764337789</p>
+                    <Phone size={15} />
+                    <p className='ml-2'>+91 9764337789</p>
                 </div>
                 <div className='h-full items-center gap-4 hidden md:flex'>
-                    <p>vishalaynile1234@gmail.com</p>
-                    <p>18 Bombala Street Tarneit VIC 3029</p>
+                    <div className='flex items-center h-full'>
+                        <Mail size={15} />
+                        <p className='ml-1'>vishalaynile1234@gmail.com</p>
+                    </div>
+                    <div className='ml-4 h-full flex items-center'>
+                        <MapPinHouse size={15} />
+                        <p className='ml-1'>18 Bombala Street Tarneit VIC 3029</p>
+                    </div>
                 </div>
             </div>
 
-            <SeconderyNavbar />
+            
 
 
         </div>

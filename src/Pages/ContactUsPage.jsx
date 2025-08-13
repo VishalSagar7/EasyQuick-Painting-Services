@@ -7,11 +7,12 @@ import { Phone } from 'lucide-react';
 import { Mail } from 'lucide-react';
 import { MapPinCheckInside } from 'lucide-react';
 import ContactUsBanner from "../assets/contactusbanner.jpg"
+import Navbar from '../components/Navbar'
 
 const ContactUsPage = () => {
     return (
         <div className='w-full bg-[#FAF6F0]'>
-
+            <Navbar/>
             <SeconderyNavbar />
             <BackgroundBanner heading={"Get in Touch With Us"} imgAddress={ContactUsBanner } />
             <div className=' py-8 px-[50px] md:px-[150px]'>

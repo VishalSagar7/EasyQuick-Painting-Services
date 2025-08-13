@@ -1,6 +1,7 @@
 import React from 'react'
 import OneStep from './OneStep'
 import { MoveRight } from 'lucide-react';
+import Heading from './Heading';
 
 const stepsArray = [
     {
@@ -32,9 +33,11 @@ const stepsArray = [
 const Steps = () => {
     return (
         <div className='w-full pb-[80px] md:px-10'>
-            <h1 className='text-4xl text-center text-gray-800 font-bold font-mono capitalize'>Steps we follow</h1>
 
-            <div className='w-full border mt-[60px] flex flex-wrap items-center justify-center gap-4 md:gap-2'>
+
+            <Heading text={"Steps We Follow"}/>
+
+            <div className='w-full  border mt-[40px] flex flex-wrap md:flex-nowrap items-center justify-center gap-4 md:gap-2'>
 
                 {stepsArray.map((step, index) => (
                     <React.Fragment key={index}>

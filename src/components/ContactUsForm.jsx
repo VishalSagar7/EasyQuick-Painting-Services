@@ -6,6 +6,7 @@ import { ContactValidationSchema } from '../Validations/ContactUsValidation';
 import contactUsFormImg from "../assets/contactUsFromImg.jpg";
 import emailjs from '@emailjs/browser';
 import Logo from "../assets/Logo.png";
+import Heading from './Heading';
 
 
 const ContactUsForm = () => {
@@ -45,11 +46,12 @@ const ContactUsForm = () => {
 
         <div className='w-full'>
 
-            <h1 className='text-4xl topic-head text-center mb-8 text-gray-900 font-bold font-mono capitalize'>Contact Us</h1>
+            
+            <Heading text={"Contact Us"}/>
 
 
-            <div className='md:h-[500px] w-full md:px-[150px] rounded overflow-hidden'>
-                <div className='w-full h-full md:flex md:bg-white rounded shadow overflow-hidden'>
+            <div className='md:h-[500px] w-full md:px-[150px] bg-white  rounded overflow-hidden'>
+                <div className='w-full h-full md:flex  rounded shadow overflow-hidden'>
                     <div className=' h-[40px] md:h-full md:w-1/2   flex items-center justify-center'>
                         <img className='h-[50px] md:h-[120px]' src={ Logo } alt="" />
 

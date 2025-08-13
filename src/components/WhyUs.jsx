@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ImageSliderForWhyUs from './commonComponent/ImageSliderForWhyUs';
-
+import Heading from './Heading';
 
 const WhyUs = () => {
 
@@ -8,9 +8,10 @@ const WhyUs = () => {
 
     return (
         <div className='hidden h-screen w-full bg-[#FAF6F0] text-gray-900 px-12 py-6 md:flex flex-col items-center'>
-            <h1 className='text-4xl text-center font-bold font-mono capitalize text-gray-900'>Why Us</h1>
+            
+            <Heading text={"Why Us"}/>
 
-            <div className='h-2/3 w-3/4 bg-white border border-gray-300 mt-[80px] flex items-center shadow-lg rounded-xl'>
+            <div className='h-2/3 w-3/4 bg-white border border-gray-300 mt-[60px] flex items-center shadow-lg rounded-xl'>
 
                 <ImageSliderForWhyUs />
 

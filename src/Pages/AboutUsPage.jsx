@@ -3,10 +3,12 @@ import SeconderyNavbar from '../components/SeconderyNavbar';
 import backroundbanner from "../assets/aboutpagebanner.jpg";
 import BackgroundBanner from '../components/BackgroundBanner';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const AboutUsPage = () => {
     return (
         <div className='w-full bg-[#FAF6F0]'>
+            <Navbar/>
             <SeconderyNavbar />
             <BackgroundBanner heading={"Know About Us"} imgAddress={backroundbanner } />
 

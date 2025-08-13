@@ -10,8 +10,7 @@ export const ContactValidationSchema = Yup.object({
         .required('Please enter a phone number'),
 
     email: Yup.string()
-        .email('Invalid email address')
-        .required('Email is required'),
+        .email('Invalid email address'),
 
     message: Yup.string()
 });
