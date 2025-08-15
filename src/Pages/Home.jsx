@@ -10,6 +10,7 @@ import ThreeSpecialities from '../components/ThreeSpecialities'
 import SeconderyNavbar from '../components/SeconderyNavbar'
 import HeroSection from '../components/HeroSection'
 import TeamCarousel from '../components/OurTeam'
+import CustomizedAccordions from '../components/Accordian'
 
 
 
@@ -26,7 +27,9 @@ const Home = () => {
             
             <HeroSection/>
 
-            <OurSpecialitiesComponent />
+            {/* <OurSpecialitiesComponent /> */}
+            
+            <CustomizedAccordions/>
 
             <ThreeSpecialities/>
 

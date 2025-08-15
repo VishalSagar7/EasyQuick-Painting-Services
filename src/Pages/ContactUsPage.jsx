@@ -31,12 +31,12 @@ const ContactUsPage = () => {
 
                 <div className='flex gap-4'>
                     <Phone color=' gray ' />
-                    <h1 className=' text-gray-800 '>+91 9764337789</h1>
+                    <h1 className=' text-gray-800 '>+91 6304052683</h1>
                 </div>
 
                 <div className='flex gap-4'>
                     <Mail color=' gray ' />
-                    <h1 className=' text-gray-800 '>vishalaynile1234@gmail.com</h1>
+                    <h1 className=' text-gray-800 '>easyquickpainting@gmail.com</h1>
                 </div>
                 <div className='flex gap-4'>
                     <MapPinCheckInside color=' gray ' />
