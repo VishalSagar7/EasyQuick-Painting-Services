@@ -12,7 +12,7 @@ import Heading from './Heading';
 const accordionData = [
     {
         id: "panel1",
-        title: "1. Surface Preparation:",
+        title: "Surface Preparation:",
         content:
             [
                 "For new surfaces: Clean the surface to remove any loose particles or dust.",
@@ -22,7 +22,7 @@ const accordionData = [
     },
     {
         id: "panel2",
-        title: "2. Priming:",
+        title: "Priming:",
         content:
             [
                 "Apply a coat of primer to create an even base and enhance paint adhesion, especially on porous or previously painted surfaces. ",
@@ -32,7 +32,7 @@ const accordionData = [
     },
     {
         id: "panel3",
-        title: "3. Putty Application (if needed):",
+        title: "Putty Application (if needed):",
         content:
             [
                 "For leveling minor undulations on walls, apply a coat of putty (like Asian Paints Acrylic Wall Putty) with a putty knife.",
@@ -41,7 +41,7 @@ const accordionData = [
     },
     {
         id: "panel4",
-        title: "4. Painting:",
+        title: "Painting:",
         content:
             [
                 "First Coat: Apply the first coat of paint using a roller or brush. ",
@@ -53,7 +53,7 @@ const accordionData = [
     },
     {
         id: "panel5",
-        title: "5. Finishing Touches:",
+        title: "Finishing Touches:",
         content:
             [
                 "Touch-ups: Address any areas needing touch-ups.",
@@ -63,7 +63,11 @@ const accordionData = [
 ];
 
 
-const style = { padding: '0 40px' , border:'none', backgroundColor:"transparent"}
+const style = {
+    border: 'none',
+    backgroundColor: 'transparent',
+    px: { xs: 2, md: 5 }, // 0 20px on small screens, 0 40px on md & up
+}
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -112,32 +116,32 @@ export default function CustomizedAccordions() {
     return (
         <div className='pt-4 pb-8'>
 
-            <Heading text={"Our Specilities"}/>
+            <Heading text={"Our Specilities"} />
 
             {
                 accordionData.map(({ id, title, content }) => (
-                <Accordion
-                    key={id}
-                    sx={style}
-                    expanded={expanded === id}
-                    onChange={handleChange(id)}
-                >
-                    <AccordionSummary
-                        sx={{ backgroundColor: "transparent" }}
-                        aria-controls={`${id}-content`}
-                        id={`${id}-header`}
+                    <Accordion
+                        key={id}
+                        sx={style}
+                        expanded={expanded === id}
+                        onChange={handleChange(id)}
                     >
-                        <Typography sx={{ fontWeight : 500, fontSize:"large"}} component="span">{title}</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        {content.map((line, index) => (
-                            <Typography key={index} sx={{ display: "block", mb: 1 , fontSize : "large"}}>
-                                {line}
-                            </Typography>
-                        ))}
-                    </AccordionDetails>
-                </Accordion>
-            ))}
+                        <AccordionSummary
+                            sx={{ backgroundColor: "transparent" }}
+                            aria-controls={`${id}-content`}
+                            id={`${id}-header`}
+                        >
+                            <Typography sx={{ fontWeight: 500, fontSize: "large" }} component="span">{title}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            {content.map((line, index) => (
+                                <Typography key={index} sx={{ display: "block", mb: 1, fontSize: "large" }}>
+                                    {line}
+                                </Typography>
+                            ))}
+                        </AccordionDetails>
+                    </Accordion>
+                ))}
         </div>
     );
 }

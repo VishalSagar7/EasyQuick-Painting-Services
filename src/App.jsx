@@ -1,10 +1,13 @@
 import router from "./Routing/router";
 import { RouterProvider } from "react-router-dom";
+import WhatsappButton from "./components/WhatsappButton";
 
 const App = () => {
   return (
-    <RouterProvider router={router}>
-    </RouterProvider>
+    <>
+      <RouterProvider router={router} />
+      <WhatsappButton />
+    </>
   )
 }
 

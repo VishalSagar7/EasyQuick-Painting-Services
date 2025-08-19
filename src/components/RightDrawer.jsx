@@ -6,7 +6,9 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export default function RightDrawer({ open, toggleDrawer }) {
 
@@ -19,7 +21,27 @@ export default function RightDrawer({ open, toggleDrawer }) {
                 <Link to="/ourservices" className="link-underline text-xl">Our services</Link>
                 <Link to="/ourwork" className="link-underline text-xl">Our Work</Link>
                 <Link to="/contactus" className="link-underline text-xl">Contact us</Link>
-            </div>
+
+                <div className='w-[130px] mt-6 text-gray-900'>
+                    <div className='w-full flex items-center'>
+                        <Phone size={10} />
+                        <p className='text-xs lowercase'>+91 6304052683</p>
+                    </div>
+                    <div className='w-full flex items-center'>
+                        <Mail size={15} />
+                        <p className='text-[11px] lowercase'>easyquickpainting@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>fg
+
+
+
+
+
+
+
+
         </Drawer>
     );
 }

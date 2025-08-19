@@ -3,12 +3,39 @@ import { useFormik } from "formik";
 import { ContactValidationSchema } from "../Validations/ContactUsValidation";
 import { Phone } from 'lucide-react';
 import emailjs from '@emailjs/browser';
-
+import Snackbar from '@mui/material/Snackbar';
 const HeroSectionForm = () => {
 
 
 
     const [isLoading, setIsLoading] = useState(false);
+    const [snackbarState, setSnackbarState] = React.useState({
+        open: false,
+        message: "",
+        type: "success", // "success" | "error"
+    });
+
+    const showSuccess = () => {
+        setSnackbarState({
+            open: true,
+            message: "Your message has been sent successfully!",
+            type: "success",
+        });
+    };
+
+    const showError = () => {
+        setSnackbarState({
+            open: true,
+            message: "There was a problem sending your message.",
+            type: "error",
+        });
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === "clickaway") return;
+        setSnackbarState({ ...snackbarState, open: false });
+    };
+
 
     const formik = useFormik({
         initialValues: {
@@ -34,13 +61,13 @@ const HeroSectionForm = () => {
                 '9Gyk9_yOU75jSj829' // Replace with your public key (not user ID anymore)
             )
                 .then(() => {
-                    
-                    alert('Thank you! Your message has been sent.');
-                    resetForm(); 
+
+                    showSuccess()
+                    resetForm();
                 })
                 .catch((err) => {
                     console.error('Failed to send email:', err);
-                    alert('Something went wrong. Please try again.');
+                    showError();
                 }).finally(() => {
                     setIsLoading(false)
                 });
@@ -49,6 +76,24 @@ const HeroSectionForm = () => {
 
     return (
         <div className="py-2 pt-1 w-[450px] hidden bg-[#ffffff] shadow-lg rounded-lg md:flex items-center justify-center">
+
+            <Snackbar
+                anchorOrigin={{ vertical: "top", horizontal: "center" }}
+                open={snackbarState.open}
+                autoHideDuration={3000}
+                onClose={handleClose}
+                message={snackbarState.message}
+                key="topcenter"
+                sx={{
+                    "& .MuiPaper-root": {
+                        backgroundColor:
+                            snackbarState.type === "success" ? "#A00B43" : "red",
+                        color: "white",
+                    },
+                }}
+            />
+
+
             <form
                 onSubmit={formik.handleSubmit}
                 className="grid grid-cols-1 gap-4 w-full p-4"
@@ -125,6 +170,7 @@ const HeroSectionForm = () => {
                 <button
                     type="submit"
                     className="text-white flex items-center justify-center h-10 rounded cursor-pointer bg-gradient-to-r from-[#A00B43] to-[#ff5f6d] hover:opacity-90 transition duration-200 transform hover:scale-[101%]"
+                    disabled={isLoading}
                 >
 
                     {isLoading ?

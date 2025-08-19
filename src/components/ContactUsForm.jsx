@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import InputField from './commonComponent/InputField';
 import { useFormik } from 'formik';
 import inputFieldCss from './utils/inputFieldCss';
@@ -7,9 +7,39 @@ import contactUsFormImg from "../assets/contactUsFromImg.jpg";
 import emailjs from '@emailjs/browser';
 import Logo from "../assets/Logo.png";
 import Heading from './Heading';
+import { Phone } from 'lucide-react';
+import Snackbar from '@mui/material/Snackbar';
 
 
 const ContactUsForm = () => {
+
+    const [isLoading, setIsLoading] = useState(false);
+    const [snackbarState, setSnackbarState] = React.useState({
+        open: false,
+        message: "",
+        type: "success", // "success" | "error"
+    });
+
+    const showSuccess = () => {
+        setSnackbarState({
+            open: true,
+            message: "Your message has been sent successfully!",
+            type: "success",
+        });
+    };
+
+    const showError = () => {
+        setSnackbarState({
+            open: true,
+            message: "There was a problem sending your message.",
+            type: "error",
+        });
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === "clickaway") return;
+        setSnackbarState({ ...snackbarState, open: false });
+    };
 
     const formik = useFormik({
         initialValues: {
@@ -20,6 +50,9 @@ const ContactUsForm = () => {
         },
         validationSchema: ContactValidationSchema,
         onSubmit: (values, { resetForm }) => {
+
+            setIsLoading(true);
+
             emailjs.send(
                 'service_uyizmlb', // service ID
                 'template_fqsoz9a', // EmailJS template ID
@@ -32,19 +65,39 @@ const ContactUsForm = () => {
                 '9Gyk9_yOU75jSj829' // Replace with your public key (not user ID anymore)
             )
                 .then(() => {
-                    console.log('Email sent successfully!');
-                    alert('Thank you! Your message has been sent.');
+                    showSuccess()
+                    
                     resetForm(); // Optional: reset form fields after submission
                 })
                 .catch((err) => {
+
+                    showError();
                     console.error('Failed to send email:', err);
-                    alert('Something went wrong. Please try again.');
+                    
+                }).finally(() => {
+                    setIsLoading(false)
                 });
         },
     });
     return (
 
         <div className='w-full'>
+
+            <Snackbar
+                anchorOrigin={{ vertical: "top", horizontal: "center" }}
+                open={snackbarState.open}
+                autoHideDuration={3000}
+                onClose={handleClose}
+                message={snackbarState.message}
+                key="topcenter"
+                sx={{
+                    "& .MuiPaper-root": {
+                        backgroundColor:
+                            snackbarState.type === "success" ? "#A00B43" : "red", 
+                        color: "white",
+                    },
+                }}
+            />
 
             
             <Heading text={"Contact Us"}/>
@@ -72,7 +125,7 @@ const ContactUsForm = () => {
                                     type="name"
                                     name="name"
                                     className={inputFieldCss}
-                                    placeholder="Enter your name"
+                                    placeholder="Enter your name*"
                                     value={formik.values.name}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
@@ -86,7 +139,7 @@ const ContactUsForm = () => {
                                     type="tel"
                                     name="phone"
                                     className={inputFieldCss}
-                                    placeholder="Enter your phone number"
+                                    placeholder="Enter your phone number*"
                                     value={formik.values.phone}
                                     onChange={(e) => {
     
@@ -131,9 +184,20 @@ const ContactUsForm = () => {
 
                             <button
                                 type="submit"
-                                className="w-full mt-6 bg-[#A00B43] hover:bg-[#a00b44d6] text-white py-2 rounded font-semibold transition"
+                                className="text-white w-full flex items-center justify-center h-10 rounded cursor-pointer bg-gradient-to-r from-[#A00B43] to-[#ff5f6d] hover:opacity-90 transition duration-200 transform hover:scale-[101%]"
+                                disabled={isLoading}
                             >
-                                Get a call back
+
+                                {isLoading ?
+                                    <div className="flex items-center justify-center">
+                                        <span className="loading loading-spinner loading-md"></span>
+                                    </div> :
+                                    <div className="flex items-center justify-center">
+                                        <Phone size={15} />
+                                        Get a call back
+                                    </div>
+                                }
+
                             </button>
 
                         </form>
