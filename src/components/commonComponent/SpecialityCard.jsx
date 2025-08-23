@@ -5,11 +5,17 @@ const SpecialityCard = ({ speciality }) => {
 
 
   return (
-      <div data-aos="fade-right" className='md:h-[350px] md:w-[400px] px-8 py-4  md:p-6 bg-[#ad1952] rounded-lg transition-transform duration-100  text-white shadow-md flex flex-col items-center gap-2 md:gap-4'>
-          {speciality?.logo }
-          <h1 className=' uppercase text-xl md:text-2xl underline font-mono'>{ speciality?.heading }</h1>
-          <p className=' text-center text-base  md:text-md'>{ speciality?.description }</p>
+    <div className=' h-[140px] md:w-[500px] px-2 md:px-4 py-2 border border-white  md:p-3 bg-white text-black rounded-lg transition-transform duration-100  flex  gap-2 md:gap-2'>
+
+      <div className='h-full w-1/4 flex items-center justify-center'>
+        <img className='h-15' src={speciality?.logo} alt="" />
       </div>
+
+      <div className='h-full w-3/4 flex flex-col justify-center'>
+        <h1 className=' uppercase text-lg md:text-xl text-left' >{speciality?.heading}</h1>
+        <p className=' text-left text-base  md:text-md'>{speciality?.description}</p>
+      </div>
+    </div>
   )
 }
 

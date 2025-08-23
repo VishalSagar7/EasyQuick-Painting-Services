@@ -6,6 +6,7 @@ import AboutUsPage from '../Pages/AboutUsPage';
 import OurServicesPage from '../Pages/OurServicesPage';
 import LoginPage from '../Pages/LoginPage';
 import OurWork from '../Pages/OurWork';
+import IndividualServicePage from '../Pages/IndividualServicePage';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     {
         path: "/ourwork",
         element: <OurWork/>
+    },
+    {
+        path: `/individualservice/:servicecode`,
+        element : <IndividualServicePage/>
     }
 ]);
 

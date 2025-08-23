@@ -13,7 +13,7 @@ const OurServices = () => {
         >
            
             <Heading text={"Services we provide"}/>
-            <div className='flex w-full flex-wrap p-6 md:px-12  md:pb-12 justify-between gap-y-6 md:gap-y-12'>
+            <div className='flex w-full flex-wrap p-6 md:px-12 justify-between gap-y-6 md:gap-y-12'>
                 {
                     servicesArray?.length > 0 && servicesArray?.map((service, index) =>
                         <ServiceCard key={index} service={service} />

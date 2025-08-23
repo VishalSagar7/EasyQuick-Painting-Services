@@ -22,17 +22,17 @@ const HeroSection = () => {
             }}
         >
 
-            <div className='h-full w-full md:w-[700px] md:h-full md:flex md:flex-col md: justify-center '>
-                <h2 className="text-black text-[1.5rem] md:text-[2.5rem] font-extralight  mb-4 leading-tight capitalize">
+            <div className='h-full w-full md:w-[700px] md:h-full md:flex md:flex-col md:justify-center '>
+                <h2 className="text-black text-[1.5rem] md:text-[2.5rem] font-light my-4 mt:0  md:mb-3 leading-tight capitalize">
                     Transforming Walls, Elevating Spaces,
                     <br />
                     Inspiring Every View
                 </h2>
 
-                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-4 pb-8 bg-white  rounded-lg shadow">
+                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6 md:pb-2 bg-white  rounded-lg shadow">
 
 
-                    <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:mt-5 md:gap-0 md:space-y-6 py-6 md:py-0">
+                    <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-0 md:space-y-6 pt-4 md:pt-0 md:py-0">
                         <WorkIcon icon={paintbrushIcon} label="Painting services" />
                         <WorkIcon icon={texture} label="Wall texture & Designing" />
                         <WorkIcon icon={waterproofing} label="Waterproofing" />

@@ -1,11 +1,8 @@
-const inputFieldCss = "w-full text-gray-800 p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-500";
-export default inputFieldCss;
-
-export const servicesArray = [
+export const serviceDetails = [
     {
         imgAddress: "https://indigopaints.com/wp-content/uploads/2020/01/1-1-Mood-brightener-1024x630-1.webp",
         serviceName: "Interior Painting",
-        servicecode : "101",
+        servicecode: "101",
         desc1: "Give your home a fresh and stylish look with our expert interior painting solutions.",
         desc2: "Our skilled painters will breathe new life into your indoor spaces with precision and care.",
     },
