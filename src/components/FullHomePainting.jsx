@@ -25,11 +25,11 @@ const FullHomePainting = () => {
                 {/* LEFT */}
                 <div className="  md:w-[400px] relative">
                     <div className="md:sticky md:top-[125px]">
-                        <h1 className="text-[1rem] md:text-[2rem] font-medium text-black text-center mb-4">
+                        <h1 className="text-[1.5rem] ml-4 md:text-[2rem] font-medium text-black text-left mb-2 md:mb-4">
                             Full Home Painting
                         </h1>
 
-                        <div className=" h-[300px]  md:h-[400px] md:w-[400px] md:rounded-lg shadow bg-white grid grid-cols-3 grid-rows-3 p-2 md:px-1 md:py-4 ">
+                        <div className=" h-[340px]  md:h-[400px] md:w-[400px] md:rounded-lg shadow bg-white grid grid-cols-3 grid-rows-3 py-2 px-0  md:px-1 md:py-4 ">
                             {fullHomePaintArray?.map((item, i) => (
                                 <div
                                     key={i}
@@ -37,7 +37,7 @@ const FullHomePainting = () => {
                                     onClick={() => handleScroll(item?.id)} // scroll to section
                                 >
                                     <img
-                                        className="h-[55] w-[55px] md:h-[65px] md:w-[65px] object-cover object-center rounded"
+                                        className="h-[60px] w-[60px] md:h-[65px] md:w-[65px] object-cover object-center rounded"
                                         src={item?.img}
                                         alt=""
                                     />
@@ -49,7 +49,7 @@ const FullHomePainting = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className="w-[600px] rounded-lg bg-white shadow ">
+                <div className="md:w-[600px] mt-2 md:mt-0 md:rounded-lg bg-white shadow ">
                     {FullHomePaintDetailsArrray?.map((item, idx) => (
                         <div key={idx} id={item.id} className="">
                             <FullHomePaintingCard item={item} idx={idx} />
