@@ -10,7 +10,7 @@ const FullHomePainting = () => {
     const handleScroll = (id) => {
         const section = document.getElementById(id);
         if (section) {
-            const yOffset = -100;
+            const yOffset = -130;
             const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({ top: y, behavior: "smooth" });
         }
@@ -21,11 +21,11 @@ const FullHomePainting = () => {
 
     return (
         <div className='bg-[#FAF6F0]  w-full' >
-            <div className="md:flex w-full gap-4 md:gap-8 px:6 md:px-0 py-6 md:py-12 justify-center">
+            <div className="md:flex w-full gap-4 md:gap-8 px:6 md:px-0 py-2 md:py-12 justify-center">
                 {/* LEFT */}
                 <div className="  md:w-[400px] relative">
                     <div className="md:sticky md:top-[125px]">
-                        <h1 className="text-[1.5rem] ml-4 md:text-[2rem] font-medium text-black text-left mb-2 md:mb-4">
+                        <h1 className="text-[1.5rem] py-2 w-full bg-white pl-4 md:text-[2rem] font-medium text-black text-left border-b border-gray-200 md:mb-4">
                             Full Home Painting
                         </h1>
 
