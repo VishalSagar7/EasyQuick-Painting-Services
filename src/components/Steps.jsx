@@ -3,6 +3,7 @@ import OneStep from './OneStep'
 import { MoveRight } from 'lucide-react';
 import Heading from './Heading';
 
+
 const stepsArray = [
     {
         img: "https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1754039525~exp=1754043125~hmac=6d201c4db80c88497e4e1a24157f4639e22827a624936b0a204cc8bdb5276ba7&w=1380",
@@ -34,6 +35,7 @@ const Steps = () => {
     return (
         <div className='w-full pb-[80px] md:px-10'>
 
+            
 
             <Heading text={"Steps We Follow"}/>
 

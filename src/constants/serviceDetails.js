@@ -42,3 +42,216 @@ export const serviceDetails = [
         desc2: "We provide experienced professionals and laborers to ensure your construction projects run smoothly and efficiently.",
     }
 ];
+
+
+
+
+export const fullHomePaintArray = [
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1727274202870-735d3c.jpeg",
+        heading: "1 BHK Painting",
+        id:"01"
+    },
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1716881982474-b87d48.jpeg",
+        heading: "2 BHK Painting",
+        id: "02"
+    },
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1727274199707-f9f163.jpeg",
+        heading: "3 BHK Painting",
+        id: "03"
+    },
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/partner-app-supply/1727953880055-79a544.jpeg",
+        heading: "4 BHK Painting",
+        id: "04"
+    },
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1752724752792-43e09b.jpeg",
+        heading: "Exterior Painting",
+        id: "05"
+    },
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1751991858838-53f4f5.jpeg",
+        heading: "Wood Polish",
+        id: "06"
+    },
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1752129811027-f2fcc5.jpeg",
+        heading: "Textures",
+        id: "07"
+    },
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1752216780590-742ac6.jpeg",
+        heading: "Mouldings",
+        id: "08"
+    },
+    {
+        img: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1729771162098-b43335.jpeg",
+        heading: "Add-ons",
+        id: "09"
+    }
+]
+
+
+
+
+export const FullHomePaintDetailsArrray = [
+    {
+        title: "1 BHK Painting",
+        id: "01",
+        types: [
+            {
+                heading: "Unfurnished 1 BHK",
+                price: "14,999",
+                description: "Price includes painting of bedroom, living room, kitchen & bathroom",
+                image: "https://d3okty7coycniy.cloudfront.net/663a1b3c8228dada44d6536d/docs/1715084341780-196111271-720.webp"
+            },
+            {
+                heading: "Furnished 1 BHK",
+                price: "12,999",
+                description: "Price includes painting of bedroom, living room, kitchen & bathroom",
+                image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/583707944.jpg?k=7ca99c1ab72b1e4c571c0a3faeabbb1108c81e30616ea38c178f0e3557b4d3cf&o=&hp=1"
+            }
+        ]
+    },
+    {
+        title: "2 BHK Painting",
+        id:"02",
+        types: [
+            {
+                heading: "Unfurnished 2 BHK",
+                price: "21,999",
+                description: "Price includes painting of 2 bedrooms, living room, kitchen & 2 bathrooms",
+                image: "https://housing-images.n7net.in/01c16c28/c7d240b21250539e0e77056976181c78/v0/medium/2.5_bhk_apartment-for-rent-sikrod-Ghaziabad-hall.jpg"
+            },
+            {
+                heading: "Furnished 2 BHK",
+                price: "20,999",
+                description: "Price includes painting of 2 bedrooms, living room, kitchen & 2 bathrooms",
+                image: "https://www.greenacresproperties.in/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-05-at-15.30.05-1.jpeg"
+            },
+        ]
+    },
+    {
+        title: "3 BHK Painting",
+        id: "03",
+        types: [
+            {
+                heading: "Unfurnished 3 BHK",
+                price: "27,999",
+                description: "Price includes painting of 3 bedrooms, living room, kitchen & 3 bathrooms",
+                image: "https://housing-images.n7net.in/01c16c28/2f2f1c491c4d839768af9e0568783106/v0/medium/3_bhk_apartment-for-rent-karvenagar-Pune-hall.jpg"
+            },
+            {
+                heading: "Furnished 3 BHK",
+                price: "24,999",
+                description: "Price includes painting of 3 bedrooms, living room, kitchen & 3 bathrooms",
+                image: "https://5.imimg.com/data5/SELLER/Default/2024/10/461228767/PS/TJ/FK/2703532/3-bhk-fully-furnished-flat.jpg"
+            },
+        ]
+    },
+    {
+        title: "4 BHK Painting",
+        id: "04",
+        types: [
+            {
+                heading: "Furnished 4 BHK",
+                price: "30,999",
+                description: "Price includes painting of 4 bedrooms, living room, kitchen & 4 bathrooms",
+                image: "https://imagecdn.99acres.com/media1/31245/17/624917667M-1753715234107.jpg"
+            }
+        ]
+    },
+    {
+        title: "Exterior Painting",
+        id: "05",
+        types: [
+            {
+                heading: "Full home exterior painting",
+                price: "12,499",
+                description: "Give your entire home a fresh and long-lasting makeover with our premium exterior painting service.",
+                image: "https://imagecdn.99acres.com//microsite/wp-content/blogs.dir/6161/files/2024/08/architectural-styles_modern-minimalism-pic-1_pinterest_Youtube.jpg"
+            },
+            {
+                heading: "Front only exterior painting",
+                price: "10,999",
+                description: "Perfect for homeowners who want to refresh the look of their main impression. ",
+                image: "https://imagecdn.99acres.com//microsite/wp-content/blogs.dir/6161/files/2024/08/architectural-styles_modern-minimalism-pic-1_pinterest_Youtube.jpg"
+            }
+        ]
+    },
+    {
+        title: "Wood Polish",
+        id: "06",
+        types: [
+            {
+                heading: "Bed wood polish",
+                price: "4,999",
+                //  description: "Give your entire home a fresh and long-lasting makeover with our premium exterior painting service.",
+                image: "https://5.imimg.com/data5/SELLER/Default/2020/9/UI/TY/PX/111586069/wooden-polished-double-bed.jpg"
+            },
+            {
+                heading: "Door wood polish",
+                price: "3,999",
+                //  description: "Perfect for homeowners who want to refresh the look of their main impression. ",
+                image: "https://images.jdmagicbox.com/quickquotes/images_main/polished-exterior-solid-wood-door-2219601002-1q7i9la6.jpg"
+            },
+            {
+                heading: "Cabinet wood polish",
+                price: "3,999",
+                //  description: "Perfect for homeowners who want to refresh the look of their main impression. ",
+                image: "https://images.woodenstreet.de/image/cache/data/kitchen-cabinet/crestor-kitchen-cabinet-revised/honey-finish-revised/updated/1-810x702.jpg"
+            },
+            {
+                heading: "Table wood polish",
+                price: "3,499",
+                //  description: "Perfect for homeowners who want to refresh the look of their main impression. ",
+                image: "https://5.imimg.com/data5/CV/GD/FI/SELLER-96010985/office-furniture-500x500.jpg"
+            }
+        ]
+    },
+    {
+        title: "Textures",
+        id: "07",
+        types: [
+            {
+                heading: "Premium textures",
+                price: "6,999",
+                description: "Elegant wall textures that add style and depth to your interiors at an affordable price",
+                image: "https://img.freepik.com/free-photo/rough-appearance-stains-cement-wall_23-2148413191.jpg"
+            },
+            {
+                heading: "Luxury textures",
+                price: "11,999",
+                description: "High-end designer textures crafted to give your walls a luxurious and premium look",
+                image: "https://i.pinimg.com/736x/fc/33/84/fc33848ce36adf8245517ddd2f8255dd.jpg"
+            }
+        ]
+    },
+    {
+        title: "Mouldings",
+        id: "08",
+        types: [
+            {
+                heading: "Wall mouldings",
+                price: "5,999",
+                //  description: "Elegant wall textures that add style and depth to your interiors at an affordable price",
+                image: "https://www.behr.com/colorfullybehr/wp-content/uploads/2021/08/AP9Y3319_BrookGreen-828x1024.jpg"
+            }
+        ]
+    },
+    {
+        title: "Add-ons",
+        id: "09",
+        types: [
+            {
+                heading: "At home consultation",
+                price: "49",
+                //  description: "Elegant wall textures that add style and depth to your interiors at an affordable price",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGwQwRpjfWOvms4RLtbJCN5lmpwqhzTAQVYQ&s"
+            }
+        ]
+    },
+]

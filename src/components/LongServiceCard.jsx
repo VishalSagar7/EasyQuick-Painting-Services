@@ -21,7 +21,7 @@ const LongServiceCard = ({ service }) => {
                         src={ service?.imgAddress } alt="" />
                 </div>
                 <div className='h-full w-[60%] px-4 py-2 md:px-8 md:py-2'>
-                    <h1 className='text-xl text-gray-700 font-semibold'>{ service?.heading }</h1>
+                    <h1 className='text-xl text-gray-700 font-semibold'>{ service?.serviceName }</h1>
 
                     <ul className='list-disc text-md space-y-3 text-gray-600 p-4'>
                         <li>{ service?.desc1 }</li>

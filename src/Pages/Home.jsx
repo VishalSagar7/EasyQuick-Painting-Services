@@ -11,31 +11,37 @@ import SeconderyNavbar from '../components/SeconderyNavbar'
 import HeroSection from '../components/HeroSection'
 import TeamCarousel from '../components/OurTeam'
 import CustomizedAccordions from '../components/Accordian'
+import { useEffect } from 'react'
 
 
 
 const Home = () => {
 
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+    }, []);
+
+
     return (
-        <div className='min-h-screen w-auto bg-[#FAF6F0] font-roboto'>
+        <>
 
 
             <Navbar />
 
             <SeconderyNavbar />
-            
-            <HeroSection/>
+
+            <HeroSection />
 
             {/* <OurSpecialitiesComponent /> */}
-            
-            <CustomizedAccordions/>
 
-            <ThreeSpecialities/>
+            <CustomizedAccordions />
+
+            <ThreeSpecialities />
 
             <OurServices />
 
-            <TeamCarousel/>
+            <TeamCarousel />
 
             <Steps />
 
@@ -47,7 +53,7 @@ const Home = () => {
 
 
 
-        </div>
+        </>
     )
 }
 

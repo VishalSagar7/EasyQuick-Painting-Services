@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SeconderyNavbar from '../components/SeconderyNavbar';
 import backroundbanner from "../assets/aboutpagebanner.jpg";
 import BackgroundBanner from '../components/BackgroundBanner';
@@ -6,11 +6,17 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 const AboutUsPage = () => {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+    },[]);
+
+
     return (
         <div className='w-full bg-[#FAF6F0]'>
-            <Navbar/>
+            <Navbar />
             <SeconderyNavbar />
-            <BackgroundBanner heading={"Know About Us"} imgAddress={backroundbanner } />
+            <BackgroundBanner heading={"Know About Us"} imgAddress={backroundbanner} />
 
             <div className=' px-[50px] lg:px-[150px] '>
                 <div className=' w-full my-4'>
@@ -43,7 +49,7 @@ const AboutUsPage = () => {
             </div>
 
 
-            <Footer/>
+            <Footer />
 
 
         </div>

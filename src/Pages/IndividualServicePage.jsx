@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import SeconderyNavbar from '../components/SeconderyNavbar';
 import { useParams } from 'react-router-dom'
 import { serviceDetails } from '../constants/serviceDetails';
+import Footer from "../components/Footer.jsx"
 
 
 const imagesArray = [
@@ -35,6 +36,9 @@ const IndividualServicePage = () => {
   console.log("service name", detailsToDisplay[0]?.serviceName);
 
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  },[]);
 
   return (
     <div className='min-h-screen bg-[#FAF6F0] '>
@@ -57,7 +61,7 @@ const IndividualServicePage = () => {
               <div
                 onClick={() => setSelectedIndex(i)}  
                 key={i}
-                className={`h-[70px] w-[90px] md:h-[100px] md:w-[140px] md:p-1 curspo border rounded items-start self-start   
+                className={`h-[90px] w-[120px] md:h-[100px] md:w-[140px] md:p-1 curspo border rounded items-start self-start   
                   ${selectedIndex === i
                   ? "border-[3px] border-[#940023] "
                   : "border border-gray-600"}`}>
@@ -75,6 +79,8 @@ const IndividualServicePage = () => {
 
         </div>
       </div>
+
+      <Footer/>
 
     </div>
   )

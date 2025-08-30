@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SeconderyNavbar from '../components/SeconderyNavbar'
 import BackgroundBanner from '../components/BackgroundBanner'
 import ContactUsForm from '../components/ContactUsForm'
@@ -10,11 +10,16 @@ import ContactUsBanner from "../assets/contactusbanner.jpg"
 import Navbar from '../components/Navbar'
 
 const ContactUsPage = () => {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+    }, []);
+
     return (
         <div className='w-full bg-[#FAF6F0]'>
-            <Navbar/>
+            <Navbar />
             <SeconderyNavbar />
-            <BackgroundBanner heading={"Get in Touch With Us"} imgAddress={ContactUsBanner } />
+            <BackgroundBanner heading={"Get in Touch With Us"} imgAddress={ContactUsBanner} />
             <div className=' py-8 px-[50px] md:px-[150px]'>
                 <p className='text-gray-700 text-md'>
                     We’re here to help you bring your vision to life! Whether you have a question, need a quote, or want to discuss your project, feel free to reach out. Fill out the form below and our team will get back to you as soon as possible.
@@ -46,7 +51,7 @@ const ContactUsPage = () => {
 
             </div>
 
-            <Footer/>
+            <Footer />
 
         </div>
     )

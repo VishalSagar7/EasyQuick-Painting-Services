@@ -29,7 +29,7 @@ const HeroSection = () => {
                     Inspiring Every View
                 </h2>
 
-                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6 md:pb-2 bg-white  rounded-lg shadow">
+                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6 pb-2 md:pb-2 bg-white  rounded-lg shadow">
 
 
                     <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-0 md:space-y-6 pt-4 md:pt-0 md:py-0">
