@@ -45,26 +45,26 @@ const IndividualServicePage = () => {
 
       <SeconderyNavbar />
 
-      <div className='px-[10px] md:px-[60px]'>
+      <div className='px-[10px]  md:px-[60px]'>
         <div className='my-2'>
           <h1 className='text-black text-2xl font-normal'>{detailsToDisplay[0]?.serviceName}</h1>
           <p className='text-gray-700 text-xs md:text-lg '>{detailsToDisplay[0]?.desc1}</p>
         </div>
-        <div className='h-[500px] md:flex'>
+        <div className='md:h-[500px] md:flex'>
           <div className=' h-[280px] md:h-full w-full md:w-6/10 border'>
             <img className='h-full w-full rounded object-center object-cover'
               src={selectedImage}
               alt="image" />
           </div>
-          <div className=" w-full md:w-4/10 md:px-8 py-4 md:py-0 flex flex-wrap items-start justify-between gap-4 md:gap-4 self-start">
+          <div className="      not-visited: h-auto w-full md:w-4/10 md:px-8 py-4 md:py-0 flex flex-wrap items-start justify-between gap-4 md:gap-4 self-start">
             {imagesArray?.map((image, i) => (
               <div
                 onClick={() => setSelectedIndex(i)}  
                 key={i}
-                className={`h-[90px] w-[120px] md:h-[100px] md:w-[140px] md:p-1 curspo border rounded items-start self-start   
+                className={`h-[80px] w-[100px] md:h-[100px] md:w-[140px] md:p-1 curspo rounded items-start self-start   
                   ${selectedIndex === i
                   ? "border-[3px] border-[#940023] "
-                  : "border border-gray-600"}`}>
+                  : ""}`}>
                 <img
                   onClick={() => setSelectedImage(image)}
                   className="h-full w-full rounded object-cover object-center"
