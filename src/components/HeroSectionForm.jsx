@@ -75,7 +75,7 @@ const HeroSectionForm = () => {
     });
 
     return (
-        <div className="py-2 pt-1 w-[450px] hidden bg-[#ffffff] shadow-lg rounded-lg md:flex items-center justify-center">
+        <div className="py-2 pt-1 w-full md:w-[450px] bg-[#ffffff] shadow-lg rounded-lg md:flex items-center justify-center">
 
             <Snackbar
                 anchorOrigin={{ vertical: "top", horizontal: "center" }}
@@ -96,7 +96,7 @@ const HeroSectionForm = () => {
 
             <form
                 onSubmit={formik.handleSubmit}
-                className="grid grid-cols-1 gap-4 w-full p-4"
+                className="grid grid-cols-1 gap-2 md:gap-4 w-full p-3 md:p-4"
             >
 
                 <h2 className="text-gray-900 text-2xl font-light leading-tight capitalize">

@@ -17,7 +17,7 @@ const ContactUsPage = () => {
 
     return (
         <div className='w-full bg-[#FAF6F0]'>
-            <Navbar />
+            {/* <Navbar /> */}
             <SeconderyNavbar />
             <BackgroundBanner heading={"Get in Touch With Us"} imgAddress={ContactUsBanner} />
             <div className=' py-8 px-[50px] md:px-[150px]'>

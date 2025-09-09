@@ -27,7 +27,7 @@ const Home = () => {
         <>
 
 
-            <Navbar />
+            {/* <Navbar /> */}
 
             <SeconderyNavbar />
 

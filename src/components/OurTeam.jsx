@@ -30,6 +30,9 @@ const teamMembers = [
     { name: "Arun", role: "", exp:"2 Years Experience", img: Arun },
 ];
 
+
+
+
 export default function TeamCarousel() {
     return (
         <div className="py-12 px-12">
@@ -65,3 +68,6 @@ export default function TeamCarousel() {
         </div>
     );
 }
+
+
+

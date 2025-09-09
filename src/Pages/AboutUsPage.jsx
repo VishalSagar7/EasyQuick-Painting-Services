@@ -14,7 +14,7 @@ const AboutUsPage = () => {
 
     return (
         <div className='w-full bg-[#FAF6F0]'>
-            <Navbar />
+            {/* <Navbar /> */}
             <SeconderyNavbar />
             <BackgroundBanner heading={"Know About Us"} imgAddress={backroundbanner} />
 
