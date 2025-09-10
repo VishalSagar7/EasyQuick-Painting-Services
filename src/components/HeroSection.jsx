@@ -23,29 +23,29 @@ const HeroSection = () => {
         >
 
             <div className=' w-full  md:w-[700px] md:h-full md:flex md:flex-col md:justify-center '>
-                <h2 className="mx-2 text-[20px] md:text-[2.5rem] my-3 text-red-900 font-normal md:font-light mt:0  md:mb-3 leading-tight capitalize">
+                <h2 className="mx-2 text-[20px] md:text-[2.5rem] my-3 text-[#620d19] font-normal md:font-light mt:0  md:mb-3 leading-tight capitalize">
                     Transforming Walls, Elevating Spaces,
                     <br className='hidden md:block' />
                     Inspiring Every View.
                 </h2>
 
-                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6  px-2  md:pb-2 bg-white  md:rounded-lg shadow">
+                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6  px-2 pb-4  md:pb-2 bg-white  md:rounded-lg shadow">
 
 
                     <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-0 md:space-y-6 pt-4 md:pt-0 md:py-0">
-                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/4930/4930226.png"} label="Painting services" />
-                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/7277/7277419.png"} label="Wall texture & Designing" />
-                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/17901/17901183.png"} label="Waterproofing" />
-                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/6529/6529259.png"} label="Luppan (Putty work)" />
-                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/12205/12205091.png"} label="Manpower supply" />
-                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/17505/17505357.png"} label="Affordable rates" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/18681/18681635.png"} label="Painting services" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/18599/18599350.png"} label="Wall texture & Designing" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/11590/11590159.png"} label="Waterproofing" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/17911/17911581.png"} label="Luppan (Putty work)" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/14459/14459553.png"} label="Manpower supply" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/17505/17505257.png"} label="Affordable rates" />
                         {/* <WorkIcon icon={cleanupIcon} label="Post work cleanup" /> */}
                     </div>
                 </div>
             </div>
 
 
-            <div className='mx-2'>
+            <div className='mx-4'>
                 <HeroSectionForm />
             </div>
 

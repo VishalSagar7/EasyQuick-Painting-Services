@@ -5,21 +5,22 @@ import { serviceDetails } from '../constants/serviceDetails';
 import Footer from "../components/Footer.jsx"
 
 
-const imagesArray = [
-  "https://aapkapainter.com/blog/wp-content/uploads/2018/09/disc-1024x768.jpg",
-  "https://paintingdrive.com/blog/wp-content/uploads/2024/06/image7-9-1024x586.jpg",
-  "https://aapkapainter.com/blog/wp-content/uploads/2024/05/purple-wall-texture-design.png",
-  "https://aapkapainter.com/blog/wp-content/uploads/2024/05/olive-green-wall-texture-design.png",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pTXjtL8QF9SZVzXmQg2SwmzrOGdD1rsQCT8WCsQ5YYtwzfkaE7r_yKaGdjBuWX_FXwQ&usqp=CAU",
-  "https://nipponpaint.co.in/wp-content/uploads/2024/10/A-room-with-sofa-and-violet-colour-walls-designed-with-tetxures-.jpg",
-  "https://assets.birlaopus.com/is/image/grasimindustries/sandstone?ts=1740737552654&dpr=off",
-  "https://www.colourdrive.in/images/uploads/design-painting/wall-textures/b4918-asain-paints-zig-zag-textures.png",
-  "https://www.colourdrive.in/images/uploads/design-painting/wall-textures/27357-spatula.jpg"
-]
+// const imagesArray = [
+//   "https://aapkapainter.com/blog/wp-content/uploads/2018/09/disc-1024x768.jpg",
+//   "https://paintingdrive.com/blog/wp-content/uploads/2024/06/image7-9-1024x586.jpg",
+//   "https://aapkapainter.com/blog/wp-content/uploads/2024/05/purple-wall-texture-design.png",
+//   "https://aapkapainter.com/blog/wp-content/uploads/2024/05/olive-green-wall-texture-design.png",
+//   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pTXjtL8QF9SZVzXmQg2SwmzrOGdD1rsQCT8WCsQ5YYtwzfkaE7r_yKaGdjBuWX_FXwQ&usqp=CAU",
+//   "https://nipponpaint.co.in/wp-content/uploads/2024/10/A-room-with-sofa-and-violet-colour-walls-designed-with-tetxures-.jpg",
+//   "https://assets.birlaopus.com/is/image/grasimindustries/sandstone?ts=1740737552654&dpr=off",
+//   "https://www.colourdrive.in/images/uploads/design-painting/wall-textures/b4918-asain-paints-zig-zag-textures.png",
+//   "https://www.colourdrive.in/images/uploads/design-painting/wall-textures/27357-spatula.jpg"
+// ]
 
 const IndividualServicePage = () => {
 
   const { servicecode } = useParams();
+  const [imagesArray, setImagesArray] = useState([]);
   const [detailsToDisplay, setDetailsToDisplay] = useState({});
   const [selectedImage, setSelectedImage] = useState(imagesArray[0])
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -28,12 +29,19 @@ const IndividualServicePage = () => {
   useEffect(() => {
 
     const thisServiceDetail = serviceDetails.filter((service) => service.servicecode == servicecode);
-    setDetailsToDisplay(thisServiceDetail)
+    // console.log("this service details", thisServiceDetail[0]);
+    
+    setDetailsToDisplay(thisServiceDetail);
+    setImagesArray(thisServiceDetail[0]?.imagesArray);
+    setSelectedImage(thisServiceDetail[0]?.imagesArray?.[0])
 
   }, []);
 
-  console.log("details to display", detailsToDisplay);
-  console.log("service name", detailsToDisplay[0]?.serviceName);
+  console.log("imagesArray" , imagesArray);
+  
+
+  // console.log("details to display", detailsToDisplay);
+  // console.log("service name", detailsToDisplay[0]?.serviceName);
 
 
   useEffect(() => {
