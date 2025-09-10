@@ -29,16 +29,18 @@ const HeroSection = () => {
                     Inspiring Every View.
                 </h2>
 
-                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6  px-2 pb-4  md:pb-2 bg-white  md:rounded-lg shadow">
+                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6  px-2 md:pb-2 bg-white pt-3  md:rounded-lg shadow">
 
 
-                    <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-0 md:space-y-6 pt-4 md:pt-0 md:py-0">
+                    <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-0 space-y-3 md:space-y-6  md:pt-0 md:py-0">
+
                         <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/18681/18681635.png"} label="Painting services" />
                         <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/18599/18599350.png"} label="Wall texture & Designing" />
                         <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/11590/11590159.png"} label="Waterproofing" />
                         <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/17911/17911581.png"} label="Luppan (Putty work)" />
                         <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/14459/14459553.png"} label="Manpower supply" />
                         <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/17505/17505257.png"} label="Affordable rates" />
+
                         {/* <WorkIcon icon={cleanupIcon} label="Post work cleanup" /> */}
                     </div>
                 </div>

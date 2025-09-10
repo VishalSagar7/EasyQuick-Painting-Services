@@ -16,7 +16,7 @@ const OurServicesPage = () => {
 
     return (
         <> 
-            <Navbar/>
+           
             <SeconderyNavbar />
             <FullHomePainting/>
             <Footer/>
