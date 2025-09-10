@@ -98,7 +98,7 @@ const HeroSectionForm = () => {
                 className="grid grid-cols-1 gap-2 md:gap-4 w-full p-3 md:p-4"
             >
 
-                <h2 className="text-gray-900 text-2xl font-light leading-tight capitalize">
+                <h2 className="text-[#720e1b] text-2xl font-light leading-tight capitalize">
                     Let us contact you
                 </h2>
 

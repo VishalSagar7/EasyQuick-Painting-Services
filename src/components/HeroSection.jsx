@@ -13,7 +13,7 @@ import HeroSectionForm from './HeroSectionForm';
 
 const HeroSection = () => {
     return (
-        <div className="w-full box-border h-[calc(100vh-110px)] overflow-x-hidden md:flex items-center justify-between px-4 md:px-12"
+        <div className="w-full box-border h-[calc(100vh-110px)] overflow-x-hidden md:flex items-center justify-between md:px-12"
             style={{
                 // backgroundImage: `url(${labourBgImg})`,
                 backgroundSize: 'cover',
@@ -22,30 +22,32 @@ const HeroSection = () => {
             }}
         >
 
-            <div className=' w-full h-1/2 md:w-[700px] md:h-full md:flex md:flex-col md:justify-center '>
-                <h2 className="text-black text-[1.5rem] md:text-[2.5rem] font-light my-2 mt:0  md:mb-3 leading-tight capitalize">
+            <div className=' w-full  md:w-[700px] md:h-full md:flex md:flex-col md:justify-center '>
+                <h2 className="mx-2 text-[20px] md:text-[2.5rem] my-3 text-red-900 font-normal md:font-light mt:0  md:mb-3 leading-tight capitalize">
                     Transforming Walls, Elevating Spaces,
-                    <br />
-                    Inspiring Every View
+                    <br className='hidden md:block' />
+                    Inspiring Every View.
                 </h2>
 
-                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6 pb-2 md:pb-2 bg-white  rounded-lg shadow">
+                <div className=" h-auto w-full md:h-auto md:w-auto md:pt-6  px-2  md:pb-2 bg-white  md:rounded-lg shadow">
 
 
                     <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-0 md:space-y-6 pt-4 md:pt-0 md:py-0">
-                        <WorkIcon icon={paintbrushIcon} label="Painting services" />
-                        <WorkIcon icon={texture} label="Wall texture & Designing" />
-                        <WorkIcon icon={waterproofing} label="Waterproofing" />
-                        <WorkIcon icon={putty} label="Luppan (Putty work)" />
-                        <WorkIcon icon={workersIcon} label="Manpower supply" />
-                        <WorkIcon icon={affordablerates} label="Affordable rates" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/4930/4930226.png"} label="Painting services" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/7277/7277419.png"} label="Wall texture & Designing" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/17901/17901183.png"} label="Waterproofing" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/6529/6529259.png"} label="Luppan (Putty work)" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/12205/12205091.png"} label="Manpower supply" />
+                        <WorkIcon icon={"https://cdn-icons-png.flaticon.com/128/17505/17505357.png"} label="Affordable rates" />
                         {/* <WorkIcon icon={cleanupIcon} label="Post work cleanup" /> */}
                     </div>
                 </div>
             </div>
 
 
-            <HeroSectionForm />
+            <div className='mx-2'>
+                <HeroSectionForm />
+            </div>
 
         </div>
     );
