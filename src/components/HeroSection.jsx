@@ -23,7 +23,7 @@ const HeroSection = () => {
         >
 
             <div className=' w-full h-1/2 md:w-[700px] md:h-full md:flex md:flex-col md:justify-center '>
-                <h2 className="text-black text-[1.5rem] md:text-[2.5rem] font-light my-4 mt:0  md:mb-3 leading-tight capitalize">
+                <h2 className="text-black text-[1.5rem] md:text-[2.5rem] font-light my-2 mt:0  md:mb-3 leading-tight capitalize">
                     Transforming Walls, Elevating Spaces,
                     <br />
                     Inspiring Every View

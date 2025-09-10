@@ -7,7 +7,6 @@ import Snackbar from '@mui/material/Snackbar';
 const HeroSectionForm = () => {
 
 
-
     const [isLoading, setIsLoading] = useState(false);
     const [snackbarState, setSnackbarState] = React.useState({
         open: false,
@@ -75,7 +74,7 @@ const HeroSectionForm = () => {
     });
 
     return (
-        <div className="py-2 pt-1 w-full md:w-[450px] bg-[#ffffff] shadow-lg rounded-lg md:flex items-center justify-center">
+        <div className="mt-6 md:mt-0 py-2 pt-1 w-full md:w-[450px] bg-[#ffffff] shadow-lg rounded-lg md:flex items-center justify-center">
 
             <Snackbar
                 anchorOrigin={{ vertical: "top", horizontal: "center" }}
