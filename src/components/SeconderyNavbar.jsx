@@ -40,10 +40,10 @@ const SeconderyNavbar = () => {
 
             <div className="h-full hidden md:flex items-center gap-8 uppercase font-medium">
                 <Link to="/" className="link-underline">Home</Link>
-                <Link to="/aboutus" className="link-underline">About us</Link>
+                <Link to="/about" className="link-underline">About us</Link>
                 <Link to="/ourservices" className="link-underline">Our services</Link>
                 <Link to="/ourwork" className="link-underline">Our Work</Link>
-                <Link to="/contactus" className="link-underline">Contact us</Link>
+                <Link to="/contact" className="link-underline">Contact us</Link>
             </div>
 
             <div className="md:hidden">

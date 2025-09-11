@@ -31,7 +31,7 @@ export const servicesArray = [
         desc2: "Our skilled team ensures crack-free, even surfaces using high-quality materials for a polished and durable result.",
     },
     {
-        imgAddress: "https://img.freepik.com/free-photo/construction-technicians-are-mixing-cement-stone-sand-construction_1150-15090.jpg?t=st=1753782326~exp=1753785926~hmac=97a5ccdfd0923c267c288ff4199e240cf8c998e81afc38c82bc6e5c6a168cc1d&w=1380",
+        imgAddress: "https://twiceservices.com/wp-content/uploads/2022/08/hand-painted-gray-flooring-with-paint-rollers-waterproof-reinforcing-net_483511-1102.png.webp",
         serviceName: "Waterproofing Solutions",
         servicecode: "105",
         desc1: "Protect your home from water damage with our professional waterproofing services designed for long-term durability.",

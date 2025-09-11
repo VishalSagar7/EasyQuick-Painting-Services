@@ -9,13 +9,16 @@ import putty from "../assets/icons/putty.png"
 import texture from "../assets/icons/texture.png"
 import cleanupIcon from "../assets/icons/cleanup.png"
 import HeroSectionForm from './HeroSectionForm';
+import herobg from "../assets/herobg.jpg"
 
 
 const HeroSection = () => {
     return (
-        <div className="w-full box-border h-[calc(100vh-110px)] overflow-x-hidden md:flex items-center justify-between md:px-12"
+        <div className="w-full box-border md:h-[calc(100vh-85px)] overflow-x-hidden md:flex items-center pb-6 md:pb-0 justify-between md:px-12"
             style={{
-                // backgroundImage: `url(${labourBgImg})`,
+                // backgroundImage:
+                //     "url('https://t4.ftcdn.net/jpg/04/77/93/81/240_F_477938186_YaMOjJGbp8H8hAB9NxvHzsGS4ZmJyNIo.jpg')",
+                backgroundImage: `url(${herobg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
