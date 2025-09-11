@@ -1,41 +1,19 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import SeconderyNavbar from '../components/SeconderyNavbar';
 import backroundbanner from "../assets/aboutpagebanner.jpg";
 import BackgroundBanner from '../components/BackgroundBanner';
 import Footer from '../components/Footer';
 
 const AboutUsPage = () => {
+    
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "auto" });
     }, []);
 
     return (
         <div className='w-full bg-[#FAF6F0]'>
-            {/* SEO Helmet */}
-            <Helmet>
-                <title>About Us | EasyQuick</title>
-                <meta
-                    name="description"
-                    content="Learn about EasyQuick (Urban Paints) – trusted painting experts offering interior, exterior, and designer wall painting with premium quality and customer-first service."
-                />
-                <meta name="keywords" content="EasyQuick, Urban Paints, painting services, texture painting, wall painting, affordable painters" />
 
-                {/* Open Graph (for Facebook, LinkedIn, WhatsApp) */}
-                <meta property="og:title" content="About Us | EasyQuick" />
-                <meta property="og:description" content="We don’t just paint walls—we transform spaces with quality, trust, and creativity. Discover EasyQuick’s story." />
-                <meta property="og:image" content="https://easyquick.com/preview-about.jpg" />
-                <meta property="og:url" content="https://easyquick.com/about" />
-                <meta property="og:type" content="website" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="About Us | EasyQuick" />
-                <meta name="twitter:description" content="Trusted experts in painting & design – EasyQuick (Urban Paints). Learn more about our journey and services." />
-                <meta name="twitter:image" content="https://easyquick.com/preview-about.jpg" />
-            </Helmet>
-
-            {/* Page Content */}
+            
             <SeconderyNavbar />
             <BackgroundBanner heading={"Know About Us"} imgAddress={backroundbanner} />
 

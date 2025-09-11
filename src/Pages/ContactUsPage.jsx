@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import SeconderyNavbar from '../components/SeconderyNavbar';
 import BackgroundBanner from '../components/BackgroundBanner';
 import ContactUsForm from '../components/ContactUsForm';
@@ -14,45 +13,7 @@ const ContactUsPage = () => {
 
     return (
         <div className='w-full bg-[#FAF6F0]'>
-            {/* SEO Helmet */}
-            <Helmet>
-                <title>Contact Us | EasyQuick</title>
-                <meta
-                    name="description"
-                    content="Get in touch with EasyQuick for professional painting services. Call, email, or fill out our form to start your project today!"
-                />
-                <meta
-                    name="keywords"
-                    content="EasyQuick contact, painting services contact, hire painters, painting quotes, home painting support"
-                />
 
-                {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
-                <meta property="og:title" content="Contact Us | EasyQuick" />
-                <meta
-                    property="og:description"
-                    content="Reach out to EasyQuick for affordable and professional painting services. We’re here to help transform your space."
-                />
-                <meta
-                    property="og:image"
-                    content="https://easyquick.com/preview-contact.jpg"
-                />
-                <meta property="og:url" content="https://easyquick.com/contact" />
-                <meta property="og:type" content="website" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Contact Us | EasyQuick" />
-                <meta
-                    name="twitter:description"
-                    content="Looking for professional painting services? Contact EasyQuick today and let’s discuss your project."
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://easyquick.com/preview-contact.jpg"
-                />
-            </Helmet>
-
-            {/* Page Content */}
             <SeconderyNavbar />
             <BackgroundBanner heading={"Get in Touch With Us"} imgAddress={ContactUsBanner} />
 

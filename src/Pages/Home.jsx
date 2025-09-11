@@ -12,7 +12,7 @@ import HeroSection from '../components/HeroSection'
 import TeamCarousel from '../components/OurTeam'
 import CustomizedAccordions from '../components/Accordian'
 import { useEffect } from 'react'
-import { Helmet } from 'react-helmet-async'   // ✅ import Helmet
+
 
 
 const Home = () => {
@@ -23,30 +23,6 @@ const Home = () => {
 
     return (
         <>
-            {/* ✅ Helmet SEO */}
-            <Helmet>
-                <title>EasyQuick | Home</title>
-                <meta
-                    name="description"
-                    content="Welcome to EasyQuick – delivering high-quality services to make your life easier. Discover our specialities, services, and why clients trust us."
-                />
-                <meta name="keywords" content="EasyQuick, services, home, reliable, trusted solutions" />
-
-                {/* Open Graph (Facebook, LinkedIn, WhatsApp Preview) */}
-                <meta property="og:title" content="EasyQuick | Home" />
-                <meta property="og:description" content="Discover EasyQuick's wide range of services designed to make your life easier." />
-                <meta property="og:image" content="https://easyquick.com/preview-image.jpg" />
-                <meta property="og:url" content="https://easyquick.com/" />
-                <meta property="og:type" content="website" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="EasyQuick | Home" />
-                <meta name="twitter:description" content="Fast & reliable services to simplify your life with EasyQuick." />
-                <meta name="twitter:image" content="https://easyquick.com/preview-image.jpg" />
-            </Helmet>
-
-            {/* <Navbar /> */}
             <SeconderyNavbar />
             <HeroSection />
             {/* <OurSpecialitiesComponent /> */}
