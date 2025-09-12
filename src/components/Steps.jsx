@@ -2,6 +2,7 @@ import React from 'react'
 import OneStep from './OneStep'
 import { MoveRight } from 'lucide-react';
 import Heading from './Heading';
+import rightarrow from "../assets/icons/rightarrow.png";
 
 
 const stepsArray = [
@@ -45,7 +46,8 @@ const Steps = () => {
                     <React.Fragment key={index}>
                         <OneStep step={step} />
                         {index !== stepsArray.length - 1 && (
-                            <MoveRight className='hidden md:block' color='black' size={50}/>
+                            // <MoveRight className='hidden md:block' color='black' size={50}/>
+                            <img src={ rightarrow }/>
                         )}
                     </React.Fragment>
                 ))}

@@ -81,7 +81,7 @@ const ContactUsForm = () => {
     });
     return (
 
-        <div className='w-full'>
+        <div className='w-full '>
 
             <Snackbar
                 anchorOrigin={{ vertical: "top", horizontal: "center" }}
@@ -103,8 +103,8 @@ const ContactUsForm = () => {
             <Heading text={"Contact Us"}/>
 
 
-            <div className='md:h-[500px] w-full md:px-[150px] bg-white  rounded overflow-hidden'>
-                <div className='w-full h-full md:flex  rounded shadow overflow-hidden'>
+            <div className='md:h-[500px] w-full md:px-[150px]  rounded overflow-hidden'>
+                <div className='w-full h-full md:flex bg-white  rounded shadow overflow-hidden'>
                     <div className=' h-[40px] md:h-full md:w-1/2   flex items-center justify-center'>
                         <img className='h-[50px] md:h-[120px]' src={ Logo } alt="" />
 
